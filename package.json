@@ -1,0 +1,20 @@
+{
+  "name": "lgtm-cat-github-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "start": "probot run ./dist/index.js",
+    "dev": "npm run build && npm start"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "probot": "^14.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.1",
+    "smee-client": "^5.0.0",
+    "typescript": "^5.9.3"
+  }
+}
