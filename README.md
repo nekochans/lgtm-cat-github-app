@@ -23,7 +23,7 @@ npm install
 
 ### 2. Set up smee.io
 
-1. Go to https://smee.io
+1. Go to [https://smee.io](https://smee.io)
 2. Click "Start a new channel"
 3. Copy the generated URL
 
@@ -53,7 +53,7 @@ cp .env.example .env
 
 Edit `.env`:
 
-```
+```env
 APP_ID=<your-app-id>
 PRIVATE_KEY_PATH=./private-key.pem
 WEBHOOK_SECRET=development
