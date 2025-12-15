@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+.npmrc
+
+# Build output
+dist/
+
+# Environment variables
+.env
+*.pem
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
