@@ -1,9 +1,9 @@
-import { Probot } from "probot";
+import type { Probot } from "probot";
 
 export default (app: Probot) => {
   app.log.info("LGTM Cat GitHub App is running!");
 
-  app.on("pull_request_review.submitted", async (context) => {
+  app.on("pull_request_review.submitted", (context) => {
     const { review, pull_request, repository } = context.payload;
 
     app.log.info({
