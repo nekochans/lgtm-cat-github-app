@@ -34,6 +34,7 @@ export default (app: Probot) => {
         issue_number: pull_request.number,
         body: lgtmMarkdown,
       });
+      app.log.info("Successfully posted LGTM cat image");
     } catch (error) {
       app.log.error(error, "Failed to post LGTM cat image");
     }
