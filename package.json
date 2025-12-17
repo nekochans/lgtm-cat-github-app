@@ -5,7 +5,9 @@
   "scripts": {
     "build": "tsc",
     "start": "probot run ./dist/index.js",
-    "dev": "npm run build && npm start"
+    "dev": "npm run build && npm start",
+    "lint": "ultracite check",
+    "fix": "ultracite fix"
   },
   "engines": {
     "node": ">=22"
@@ -14,8 +16,10 @@
     "probot": "14.2.4"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.3.8",
     "@types/node": "25.0.1",
     "smee-client": "5.0.0",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "ultracite": "6.4.0"
   }
 }

@@ -80,3 +80,17 @@ npm start
 - `npm run build` - Compile TypeScript
 - `npm start` - Start the app
 - `npm run dev` - Build and start
+- `npm run lint` - Run linter
+- `npm run fix` - Auto-fix lint and format issues
+
+## Code Quality
+
+This project uses [ultracite](https://www.ultracite.ai/) for linting and formatting.
+
+```bash
+# Check for lint issues
+npm run lint
+
+# Auto-fix issues
+npm run fix
+```
