@@ -13,7 +13,8 @@ export default (app: Probot) => {
     }
 
     try {
-      const { data: comments } = await context.octokit.rest.issues.listComments(
+      const comments = await context.octokit.paginate(
+        context.octokit.rest.issues.listComments,
         {
           owner: repository.owner.login,
           repo: repository.name,
