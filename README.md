@@ -11,7 +11,7 @@ A GitHub App that automatically posts a cat LGTM image when a pull request is ap
 
 ### Prerequisites
 
-- Node.js >= 18
+- Node.js >= 22
 - npm
 - GitHub account
 
@@ -58,6 +58,7 @@ APP_ID=<your-app-id>
 PRIVATE_KEY_PATH=./private-key.pem
 WEBHOOK_SECRET=development
 WEBHOOK_PROXY_URL=<your-smee-url>
+LGTMEOW_BASE_URL=https://api.lgtmeow.com
 ```
 
 Place the downloaded private key file as `private-key.pem` in the project root.

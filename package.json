@@ -7,7 +7,8 @@
     "start": "probot run ./dist/index.js",
     "dev": "npm run build && npm start",
     "lint": "ultracite check",
-    "fix": "ultracite fix"
+    "fix": "ultracite fix",
+    "test": "vitest run"
   },
   "engines": {
     "node": ">=22"
@@ -20,6 +21,7 @@
     "@types/node": "25.0.1",
     "smee-client": "5.0.0",
     "typescript": "5.9.3",
-    "ultracite": "6.4.0"
+    "ultracite": "6.4.0",
+    "vitest": "4.0.16"
   }
 }
