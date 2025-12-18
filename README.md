@@ -95,3 +95,54 @@ npm run lint
 # Auto-fix issues
 npm run fix
 ```
+
+## Production Deployment (Fly.io)
+
+### Prerequisites
+
+- [Fly.io CLI](https://fly.io/docs/flyctl/install/)
+- Fly.io account
+
+### 1. Login to Fly.io
+
+```bash
+fly auth login
+```
+
+### 2. Create the app
+
+```bash
+fly apps create lgtm-cat-bot
+```
+
+### 3. Set secrets
+
+```bash
+fly secrets set APP_ID="your-github-app-id"
+fly secrets set PRIVATE_KEY="$(cat ./private-key.pem)"
+fly secrets set WEBHOOK_SECRET="your-webhook-secret"
+```
+
+### 4. Deploy
+
+```bash
+fly deploy
+```
+
+### 5. Update GitHub App Webhook URL
+
+Update your GitHub App settings:
+- Webhook URL: `https://lgtm-cat-bot.fly.dev/api/github/webhooks`
+
+### Useful commands
+
+```bash
+# Check app status
+fly status
+
+# View logs
+fly logs
+
+# SSH into the machine
+fly ssh console
+```
