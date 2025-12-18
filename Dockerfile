@@ -26,4 +26,4 @@ USER node
 
 EXPOSE 3000
 
-CMD ["npm", "run", "start"]
+CMD ["node", "node_modules/probot/bin/probot.js", "run", "./dist/index.js"]
