@@ -2,10 +2,19 @@
 
 A GitHub App that automatically posts a cat LGTM image when a pull request is approved.
 
+## Install
+
+[Install GitHub App](https://github.com/apps/lgtmeow)
+
 ## Features
 
-- Listens for PR approval events
-- Automatically posts a random cat LGTM image from [lgtmeow.com](https://lgtmeow.com/)
+- **Automatic**: Just approve a PR - no manual action needed
+- **Random images**: A different cat LGTM image every time from [lgtmeow.com](https://lgtmeow.com/)
+- **No duplicates**: Posts only once per PR, even with multiple approvals
+
+## How it works
+
+<img width="560" alt="LGTM Cat Bot comment example" src="https://github.com/user-attachments/assets/0d5e1efe-bb4f-4b89-bf03-1dea8ecd86eb" />
 
 ## Local Development Setup
 
